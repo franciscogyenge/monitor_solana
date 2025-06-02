@@ -8,7 +8,7 @@ import socketserver
 
 # Configurações
 BOT_TOKEN = '8197667864:AAFLHCT9w2U8ERu8mTeatDr1ySg-hY7NGRM'  # Substitua pelo seu token real
-CHAT_ID = '7675250716'  # Substitua pelo seu chat_id real
+CHAT_ID = '-4906472866'  # Substitua pelo seu chat_id real
 
 GECKO_TERMINAL_URL = 'https://api.geckoterminal.com/api/v2/networks/solana/pools'
 CHECK_INTERVAL = 30  # meio minuto
