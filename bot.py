@@ -51,7 +51,8 @@ async def main():
             if pool_id and pool_id not in seen_tokens:
                 seen_tokens.add(pool_id)
                 name = attributes.get('token0', {}).get('name') or 'Token sem nome'
-                link = f"https://www.geckoterminal.com/solana/pools/{pool_id}"
+                link_id = pool_id.replace('solana_', '')
+                link = f"https://www.geckoterminal.com/solana/pools/{link_id}"
                 liquidity = attributes.get('reserve_in_usd')
                 message = f"🚀 Novo token listado na Solana!\n\nNome: {name}\nLiquidez: ${liquidity}\nLink: {link}"
                 await send_alert(bot, message)
